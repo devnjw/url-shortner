@@ -8,7 +8,8 @@ db = {}
 
 with open('urls.csv', 'r') as f:
 	reader = csv.DictReader(f)
-	db = dict(reader)
+	for c in reader:
+		db = c
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
