@@ -32,4 +32,4 @@ def redirect_url(short_url):
 	return redirect("https://www.naver.com")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
